@@ -120,7 +120,7 @@ type GroupResponse struct {
 	FullPath             string `json:"full_path"`
 	ParentId             *int   `json:"parent_id"`
 	LdapCN               string `json:"ldap_cn"`
-	LdapAccess           string `json:"ldap_access"`
+	LdapAccess           int `json:"ldap_access"`
 }
 
 func (p GroupResponse) GroupId() string {
